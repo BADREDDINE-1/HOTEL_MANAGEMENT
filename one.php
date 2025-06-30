@@ -37,11 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['form_type'] === 'register')
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'badr.liongames@gmail.com';
+                    $mail->Username = 'your email';
                     $mail->Password = 'rhtm aahv sfaf xnfn';
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port = 587;
-                    $mail->setFrom('badr.liongames@gmail.com', 'QA-HOTEL');
+                    $mail->setFrom('your email', 'QA-HOTEL');
                     $mail->addAddress($email, $name);
                     $mail->Subject = 'Verify your email - QA-HOTEL';
                     $mail->isHTML(true);
