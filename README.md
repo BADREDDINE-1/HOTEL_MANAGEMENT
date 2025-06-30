@@ -16,3 +16,23 @@ Welcome to **Aurora Hotel**, a modern and stylish web-based room booking system.
 
 ## 📁 Project Structure
 
+/aurora-hotel/
+│
+├── index.php # Homepage (welcome screen)
+├── rooms.php # Room listings with booking buttons
+├── book.php # Booking form with validation
+├── my_bookings.php # User booking history
+│
+├── /admin/ # Admin dashboard (optional)
+│ ├── admin_rooms.php # Room management
+│ ├── admin_bookings.php # View/manage bookings
+│
+├── /uploads/ # Uploaded room images
+├── /assets/ # CSS, JS files
+│ ├── style.css
+│ └── script.js
+│
+├── config.php # DB connection via PDO
+├── one.php # Login page
+├── logout.php # Logout handler
+└── database.sql # SQL structure and seed data
