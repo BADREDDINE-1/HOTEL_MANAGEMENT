@@ -28,11 +28,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com'; 
                 $mail->SMTPAuth = true;
-                $mail->Username = 'badr.liongames@gmail.com';
+                $mail->Username = 'your email';
                 $mail->Password = 'rhtm aahv sfaf xnfn'; // Don't expose real credentials in production
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
-                $mail->setFrom('badr.liongames@gmail.com', 'QA-HOTEL');
+                $mail->setFrom('your email', 'QA-HOTEL');
                 $mail->addAddress($email);
                 $mail->Subject = 'Password Reset Request';
                 $mail->isHTML(true);
