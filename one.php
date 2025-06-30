@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['form_type'] === 'login') {
                 if($user['role'] === 'admin') {
                     header("Location: admin/admin_dashboard.php");
                 } else {
-                    header("Location: index.php");
+                    header("Location: customer/index.php");
                 }
             } else {
                 $loginError = "Your email is not verified.";
